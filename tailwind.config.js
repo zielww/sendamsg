@@ -13,8 +13,15 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                beanie: ['Reenie Beanie', 'cursive']
             },
         },
+
     },
-    plugins: [],
+    plugins: [
+        require('daisyui'),
+    ],
+    daisyui: {
+        themes: ["lofi", "black"],
+    }
 };
