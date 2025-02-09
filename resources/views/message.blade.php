@@ -11,7 +11,7 @@
     <div class="max-w-4xl mx-auto px-4 py-12">
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Message Card -->
-            <div class="bg-white rounded-xl border border-base-300 p-6 space-y-4 hover:shadow-xl transition-shadow">
+            <div class="bg-bg-100 rounded-xl border border-base-300 p-6 space-y-4 hover:shadow-xl transition-shadow">
                 <div class="flex items-center space-x-3 mb-6">
                     <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                         <i class="fa-solid fa-envelope text-primary text-xl"></i>

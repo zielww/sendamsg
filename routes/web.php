@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Arr;
+use App\Models\Message;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,23 +13,7 @@ Route::get('/write', function () {
 
 Route::get('/browse', function () {
     return view('browse', [
-        'messages' => [
-            [
-                'id' => 1,
-                'name' => 'Alice',
-                'message' => 'Hello!'
-            ],
-            [
-                'id' => 2,
-                'name' => 'Bob',
-                'message' => 'Hi Shimi!'
-            ],
-            [
-                'id' => 3,
-                'name' => 'Charlie',
-                'message' => 'Good day!'
-            ]
-        ],
+        'messages' => Message::all(),
     ]);
 });
 
@@ -42,27 +26,7 @@ Route::get('/support', function () {
 });
 
 Route::get('/message/{id}', function ($id) {
-    $messages = [
-        [
-            'id' => 1,
-            'name' => 'Alice',
-            'message' => 'Hello!'
-        ],
-        [
-            'id' => 2,
-            'name' => 'Bob',
-            'message' => 'Hi Shimi!'
-        ],
-        [
-            'id' => 3,
-            'name' => 'Charlie',
-            'message' => 'Good day!'
-        ]
-    ];
-
-    $message = Arr::first($messages, fn($message) => $message['id'] == $id);
-
     return view('message', [
-        'message' => $message,
+        'message' => Message::find($id),
     ]);
 });
