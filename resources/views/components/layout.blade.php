@@ -31,8 +31,8 @@
 
         <!-- Menu for mobile -->
         <div class="dropdown dropdown-end sm:hidden">
-            <button class="btn btn-ghost">
-                |||
+            <button class="btn btn-ghost text-md">
+                Menu
             </button>
 
             <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-4 rounded-box shadow w-64 gap-2">
