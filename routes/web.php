@@ -11,7 +11,16 @@ Route::get('/write', function () {
 });
 
 Route::get('/browse', function () {
-    return view('browse');
+    return view('browse', [
+        'messages' => [
+            ['name' => 'Alice', 'message' => 'Hello!'],
+            ['name' => 'Bob', 'message' => 'Hi Shimi!'],
+            [
+                'name' => 'Charlie',
+                'message' => 'Good day!'
+            ]
+        ],
+    ]);
 });
 
 Route::get('/history', function () {

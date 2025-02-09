@@ -6,11 +6,11 @@
                 Send your unsent letters through a message.
             </span>
             <div class="flex gap-4">
-                <a class="btn btn-primary rounded">
+                <a href="/write" class="btn btn-primary rounded">
                     Write a Message
                 </a>
 
-                <a class="btn btn-outline rounded">
+                <a href="/browse" class="btn btn-outline rounded">
                     Browse Messages
                 </a>
             </div>
